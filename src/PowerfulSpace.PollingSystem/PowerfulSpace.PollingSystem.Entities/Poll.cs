@@ -1,29 +1,28 @@
-﻿using System;
+﻿using PowerfulSpace.PollingSystem.Entities.Base;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PowerfulSpace.PollingSystem.Entities
 {
     [DebuggerDisplay("{QuestionText}")]
-    public class Poll
+    public class Poll : Identity
     {
 
         public string QuestionText { get; }
 
-        public List<PollAnswer>? Answers { get;}
+        public List<Answer>? Answers { get;}
 
 
-        public Poll(string questionText, List<PollAnswer> answers)
+        public Poll(string questionText, List<Answer> answers)
         {
             QuestionText = questionText;
             Answers = answers;
         }
 
 
-        public void VoteTo(int id, int value = 1)
+        public void VoteTo(Guid id, int value = 1)
         {
             var item = Answers?.SingleOrDefault(x => x.Id == id);
 

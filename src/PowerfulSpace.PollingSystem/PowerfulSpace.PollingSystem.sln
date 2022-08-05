@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerfulSpace.PollingSystem.Entities", "PowerfulSpace.PollingSystem.Entities\PowerfulSpace.PollingSystem.Entities.csproj", "{AEF9CF99-5CE7-49D9-B5F0-6E4188D6F34A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerfulSpace.PollingSystem.Entities", "PowerfulSpace.PollingSystem.Entities\PowerfulSpace.PollingSystem.Entities.csproj", "{AEF9CF99-5CE7-49D9-B5F0-6E4188D6F34A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerfulSpace.PollingSystem.ConsoleClient", "PowerfulSpace.PollingSystem.ConsoleClient\PowerfulSpace.PollingSystem.ConsoleClient.csproj", "{F29B52E6-C762-4CC7-B4DC-22D09BE23C35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerfulSpace.PollingSystem.ConsoleClient", "PowerfulSpace.PollingSystem.ConsoleClient\PowerfulSpace.PollingSystem.ConsoleClient.csproj", "{F29B52E6-C762-4CC7-B4DC-22D09BE23C35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerfulSpace.PollingSystem.Application", "PowerfulSpace.PollingSystem.Application\PowerfulSpace.PollingSystem.Application.csproj", "{9CBDC04E-64FF-47FB-83F5-1FE2F6DA05BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F29B52E6-C762-4CC7-B4DC-22D09BE23C35}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F29B52E6-C762-4CC7-B4DC-22D09BE23C35}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F29B52E6-C762-4CC7-B4DC-22D09BE23C35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CBDC04E-64FF-47FB-83F5-1FE2F6DA05BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CBDC04E-64FF-47FB-83F5-1FE2F6DA05BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CBDC04E-64FF-47FB-83F5-1FE2F6DA05BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CBDC04E-64FF-47FB-83F5-1FE2F6DA05BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
