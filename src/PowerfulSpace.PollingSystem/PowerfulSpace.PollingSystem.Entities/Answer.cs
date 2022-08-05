@@ -13,7 +13,7 @@ namespace PowerfulSpace.PollingSystem.Entities
             Title = title;
         }
 
-        public string Title { get;}
+        public string Title { get; init; }
 
         public int Votes { get; set; }
 

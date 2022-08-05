@@ -10,16 +10,26 @@ namespace PowerfulSpace.PollingSystem.Entities
     public class Poll : Identity
     {
 
-        public string QuestionText { get; }
+        public string QuestionText { get; init; }
 
         public List<Answer>? Answers { get;}
 
 
-        public Poll(string questionText, List<Answer> answers)
+
+
+        public Poll(string questionText, List<Answer> answers) : this(questionText)
         {
-            QuestionText = questionText;
+            //QuestionText = questionText;
             Answers = answers;
         }
+
+        private Poll(string questionText)
+        {
+            QuestionText = questionText;
+        }
+
+
+
 
 
         public void VoteTo(Guid id, int value = 1)

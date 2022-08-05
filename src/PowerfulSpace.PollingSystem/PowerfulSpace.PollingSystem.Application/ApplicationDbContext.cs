@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿#nullable disable
+
+using Microsoft.EntityFrameworkCore;
 using PowerfulSpace.PollingSystem.Entities;
 
 namespace PowerfulSpace.PollingSystem.Application
@@ -10,12 +12,17 @@ namespace PowerfulSpace.PollingSystem.Application
 
         //}
 
-#nullable disable
+
 
         public DbSet<Poll> Polls { get; set; }
         public DbSet<Answer> Answers { get; set; }
 
-#nullable enable
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseInMemoryDatabase("IN-MEMORY");
+        }
 
     }
 }
+
+#nullable enable
